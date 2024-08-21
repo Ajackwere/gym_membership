@@ -26,7 +26,7 @@ Provide REST API endpoints for all CRUD operations
 
 ## Technologies Used
 
-Java 11
+Java 17
 Spring Boot
 Spring Web
 Spring Data JPA
@@ -37,7 +37,7 @@ JUnit and Mockito for testing
 ## Getting Started
 ### Prerequisites
 
-Java 11 or higher
+Java 17 or higher
 Maven 3.x
 
 # Installation
