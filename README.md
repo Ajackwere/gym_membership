@@ -6,8 +6,8 @@ The Gym Membership App is a RESTful API built using Java Spring Boot, which allo
 - Technologies Used
 - Getting Started
 
-- Prerequisites
-- Installation
+    Prerequisites
+    Installation
 
 
 - API Documentation
@@ -17,12 +17,36 @@ The Gym Membership App is a RESTful API built using Java Spring Boot, which allo
 - License
 
 ## Features
+### Member Management
+    Create, read, update, and delete .gym member profiles.
+    Store member information such as name, contact details, membership type, and payment history.
+    Implement membership expiration and renewal logic.
 
-Create, update, and retrieve gym members
-Manage membership plans with details like name, description, duration, and price
-Handle member subscriptions, including start and end dates
-Validate member subscription status before allowing actions
-Provide REST API endpoints for all CRUD operations
+### Membership Plans
+    Define different membership plans with details like name, description, duration, and price.
+    Handle plan upgrades, downgrades, and renewals.
+
+### Subscription Management:
+-    Manage member subscriptions, including start and end dates.
+ -   Validate member subscription status before allowing actions.
+
+### Payment Processing 
+-   Integrate with a payment gateway (MPESA, PayPal) to process membership fees.
+-   Handle recurring payments for monthly or annual memberships.
+-   Track payment history.
+### Attendance Tracking (for Future Implementation)
+-   Allow members to check in and out of the gym using the app.
+-   Track attendance records for individual members and generate reports.
+
+### Class Scheduling (for Future Implementation)
+
+- Create and manage class schedules with different instructors, times, and room assignments.
+- Allow members to view and sign up for classes.
+- Implement class capacity limits and waitlists.
+- Notifications (Optional for Future Implementation):
+
+- Send notifications to members about upcoming class cancellations, membership renewals, or special offers.
+- Use push notifications or email for timely communication.
 
 ## Technologies Used
 
