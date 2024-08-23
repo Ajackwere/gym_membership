@@ -30,7 +30,7 @@ The Gym Membership App is a RESTful API built using Java Spring Boot, which allo
 -    Manage member subscriptions, including start and end dates.
  -   Validate member subscription status before allowing actions.
 
-### Payment Processing 
+### Payment Processing (Future implementation)
 -   Integrate with a payment gateway (MPESA, PayPal) to process membership fees.
 -   Handle recurring payments for monthly or annual memberships.
 -   Track payment history.
