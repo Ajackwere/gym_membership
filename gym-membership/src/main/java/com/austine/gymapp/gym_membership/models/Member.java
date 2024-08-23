@@ -41,6 +41,18 @@ public class Member {
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<Payment> paymentHistory;
 
+    @ManyToOne
+    @JoinColumn(name = "membership_plan_id", nullable = false)
+    private MembershipPlan membershipPlan;
+
+    public MembershipPlan getMembershipPlan(){
+        return membershipPlan;
+    }
+
+    public void setMembershipPlan(MembershipPlan membershipPlan){
+        this.membershipPlan = membershipPlan;
+    }
+
 
 
     public Long getId(){
