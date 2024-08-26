@@ -1,11 +1,12 @@
 package com.austine.gymapp.gym_membership.models;
+
 import jakarta.persistence.*;
 import java.time.LocalDate;
-
 
 @Entity
 @Table(name = "subscriptions")
 public class Subscription {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,53 +25,55 @@ public class Subscription {
     @Column(nullable = false)
     private LocalDate endDate;
 
-
-
     @Column(nullable = false)
     private boolean isActive;
 
-    public Long getId(){
+    // Getters and Setters
+    public Long getId() {
         return id;
     }
 
-    public void setId(Long id){
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public LocalDate getStartDate(){
-        return startDate;
-    }
-
-    public void setStartDate(LocalDate startDate){
-        this.startDate = startDate;
-    }
-
-    public Member getMember(){
+    public Member getMember() {
         return member;
     }
 
-    public void setMember(Member member){
+    public void setMember(Member member) {
         this.member = member;
     }
 
-    public MembershipPlan getMembershipPlan(){
+    public MembershipPlan getMembershipPlan() {
         return membershipPlan;
     }
 
-    public void setMembershipPlan(MembershipPlan membershipPlan){
+    public void setMembershipPlan(MembershipPlan membershipPlan) {
         this.membershipPlan = membershipPlan;
     }
 
-    public LocalDate getEndDate(){
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(LocalDate startDate) {
+        this.startDate = startDate;
+    }
+
+    public LocalDate getEndDate() {
         return endDate;
     }
 
-    public boolean isActive(){
+    public void setEndDate(LocalDate endDate) {
+        this.endDate = endDate;
+    }
+
+    public boolean isActive() {
         return isActive;
     }
 
-    public void setActive(boolean isActive){
+    public void setActive(boolean isActive) {
         this.isActive = isActive;
     }
-
 }
